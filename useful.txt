@@ -1,0 +1,11 @@
+URL For retrieving..
+pics: https://image.tmdb.org/t/p/w600_and_h900_bestv2/{JPG FILE}
+
+API Key (v3): feaeca6fb0c36f0ea5df9876a143e84b
+
+API Read Access Token (v4 auth): eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZWFlY2E2ZmIwYzM2ZjBlYTVkZjk4NzZhMTQzZTg0YiIsInN1YiI6IjVhNjEyM2Y3MGUwYTI2MTAzMTAwYTI2ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.1bB5SQCrYE4hut8V8CMKyXxD3YV_bix_BAKIU-cVlTw
+
+API Discover (basically their version of getting things from their table (thru api)):
+https://www.themoviedb.org/documentation/api/discover
+
+API Documentation: https://developers.themoviedb.org/3
