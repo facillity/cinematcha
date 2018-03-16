@@ -1,0 +1,53 @@
+html, body {
+  background: black;
+  color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+#background_image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: block;
+  opacity: 0;
+  width: 110%;
+  height: 110%;
+  filter: blur(10px) !important;
+  margin: -20px -20px -20px -20px;
+}
+
+#list_info {
+  overflow-x: hidden;
+  width: auto;
+}
+
+.carousel_label {
+  margin: 8px 0px;
+  display: inline-block;
+}
+
+.front {
+  position: relative;
+  z-index: 1;
+}
+
+.poster {
+  height: auto;
+  width: 20%;
+  padding: 1px;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .poster {
+    width: 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .poster {
+    width: 33.33%;
+  }
+}
