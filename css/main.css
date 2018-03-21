@@ -2,7 +2,6 @@ html, body {
   background: black;
   color: white;
   width: 100%;
-  overflow: hidden;
 }
 
 #background_image {
@@ -11,7 +10,9 @@ html, body {
   right: 0;
   z-index: 0;
   display: block;
-  opacity: 0;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://image.tmdb.org/t/p/w1400_and_h450_face/fYU3ckVE1zECs42ZO0uSoJpwlXi.jpg");
   width: 110%;
   height: 110%;
   filter: blur(10px) !important;
@@ -21,11 +22,20 @@ html, body {
 #list_info {
   overflow-x: hidden;
   width: auto;
+  margin: 10px 5px;
 }
 
 .carousel_label {
-  margin: 8px 0px;
+  margin: 10px 0px;
   display: inline-block;
+  background: #19e0a0;
+  border-radius: 2px;
+  padding: 5px 10px;
+  color: white !important;
+}
+
+.c_label {
+  margin: 5px auto;
 }
 
 .front {
@@ -33,21 +43,76 @@ html, body {
   z-index: 1;
 }
 
+.logo {
+  margin: 10px auto auto 5px;
+  position: absolute;
+}
+
+.logo img {
+  width: 250px;
+  filter: brightness(125%);
+}
+
 .poster {
   height: auto;
   width: 20%;
+  height: 29.6vw;
   padding: 1px;
+  cursor: pointer;
+}
+
+#search_container {
+  font-size: 20px;
+  display: sticky;
+  width: 100%;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+#search {
+  padding: 15px;
+  text-align: left;
+  max-width: 90%;
+  width: 600px;
+  display: inline-block;
+  border: none;
+  border-radius: 2px 0 0 2px;
+}
+
+#search_button {
+  font-size: 16px;
+  padding: 24px 20px 20px;
+  background: #19e0a0;
+  border-radius: 0px 2px 2px 0px;
+  display: inline-block;
+  margin-left: -6px;
   cursor: pointer;
 }
 
 @media (min-width: 1200px) {
   .poster {
     width: 10%;
+    height: 14.8vw;
   }
 }
 
 @media (max-width: 800px) {
   .poster {
     width: 33.33%;
+    height: 49.33vw;
   }
+
+  #search {
+    width: 75%;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
 }

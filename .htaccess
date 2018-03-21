@@ -3,3 +3,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^api/([a-zA-Z0-9_]+)[/]*$ /api/index.php?action=$1 [NC,L,QSA]
+
+RewriteRule ^q/(.+)[/]*$ search/search.php?q=$1 [NC,L,QSA]
